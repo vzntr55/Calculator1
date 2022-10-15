@@ -35,6 +35,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtKetQua = new System.Windows.Forms.TextBox();
             this.btn_Cong = new System.Windows.Forms.Button();
+            this.btnTru = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtA
@@ -92,19 +93,31 @@
             // btn_Cong
             // 
             this.btn_Cong.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Cong.Location = new System.Drawing.Point(145, 200);
+            this.btn_Cong.Location = new System.Drawing.Point(55, 214);
             this.btn_Cong.Name = "btn_Cong";
             this.btn_Cong.Size = new System.Drawing.Size(88, 28);
             this.btn_Cong.TabIndex = 2;
-            this.btn_Cong.Text = "Cộng";
+            this.btn_Cong.Text = "+";
             this.btn_Cong.UseVisualStyleBackColor = true;
             this.btn_Cong.Click += new System.EventHandler(this.btn_Cong_Click);
+            // 
+            // btnTru
+            // 
+            this.btnTru.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTru.Location = new System.Drawing.Point(192, 214);
+            this.btnTru.Name = "btnTru";
+            this.btnTru.Size = new System.Drawing.Size(88, 28);
+            this.btnTru.TabIndex = 2;
+            this.btnTru.Text = "-";
+            this.btnTru.UseVisualStyleBackColor = true;
+            this.btnTru.Click += new System.EventHandler(this.btn_Tru_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(335, 283);
+            this.Controls.Add(this.btnTru);
             this.Controls.Add(this.btn_Cong);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -128,6 +141,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtKetQua;
         private System.Windows.Forms.Button btn_Cong;
+        private System.Windows.Forms.Button btnTru;
     }
 }
 
